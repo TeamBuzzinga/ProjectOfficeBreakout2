@@ -52,11 +52,17 @@ public class PlayerController : MonoBehaviour
 		
 		if(anim.layerCount ==2)		
 			layer2CurrentState = anim.GetCurrentAnimatorStateInfo(1);	// set our layer2CurrentState variable to the current state of the second Layer (1) of animation
-		
+
 
 		if (currentBaseState.nameHash == locoState) {
 			if (Input.GetKey(KeyCode.C)) {
 				anim.SetBool ("Crouch", true);
+			}
+
+			if(!(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
+			{
+				float s = anim.GetFloat("Speed");
+				anim.SetFloat("Speed",s/4);
 			}
 		}
 		else if (currentBaseState.nameHash == crouchState) {
