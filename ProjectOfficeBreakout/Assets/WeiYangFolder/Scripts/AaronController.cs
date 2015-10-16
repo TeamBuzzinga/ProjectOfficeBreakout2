@@ -37,18 +37,18 @@ public class AaronController : MonoBehaviour
 	static int grabState = Animator.StringToHash("Layer 2.Grab");
 
 	public float slipperyFriction = 0.99999999999999f;
-
+	public float slipperySpeed = 0.08f;
 	Rigidbody rb;
 
-	public Vector3 rbAngle;
-	public Vector3 rbPos;
-	public float rbTransX;
-	public float rbTransZ;
+	Vector3 rbAngle;
+	Vector3 rbPos;
+	float rbTransX;
+	float rbTransZ;
 	public float gravity = 0.0001f;
 	float downSpeed = 0f;
 
-	public float slipX = 0f;
-	public float slipZ = 0f;
+	float slipX = 0f;
+	float slipZ = 0f;
 
 	bool grabbing = false;
 	GameObject o;
@@ -150,8 +150,8 @@ public class AaronController : MonoBehaviour
 				if (Input.GetAxis("Vertical") != 0f )
 				{
 
-					slipX += 0.08f * rbTransX;
-					slipZ += 0.08f * rbTransZ;
+					slipX += slipperySpeed * rbTransX;
+					slipZ += slipperySpeed * rbTransZ;
 				}
 				else
 				{
