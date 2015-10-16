@@ -31,6 +31,9 @@ public class AaronController : MonoBehaviour
 	static int crouchState = Animator.StringToHash("Base Layer.Crouch");
 	static int crouchWalkState = Animator.StringToHash("Base Layer.CrouchWalk");
 
+	static int loseState = Animator.StringToHash("Base Layer.Lose");
+	static int winState = Animator.StringToHash("Base Layer.Win");
+
 	static int grabState = Animator.StringToHash("Layer 2.Grab");
 
 	public float slipperyFriction = 0.99999999999999f;
@@ -50,13 +53,22 @@ public class AaronController : MonoBehaviour
 	bool grabbing = false;
 	GameObject o;
 
+	GameObject hud;
+
 
 	void Start ()
 	{
 		anim = GetComponent<Animator>();					  
-		col = GetComponent<CapsuleCollider>();				
+		col = GetComponent<CapsuleCollider>();	
+
+		hud = GameObject.Find("HUDCanvas");
+
 		if(anim.layerCount ==2)
 			anim.SetLayerWeight(1, 1);
+
+		anim.SetBool("Lose",false);
+		anim.SetBool("Win",false);
+
 	}
 	
 	
@@ -73,7 +85,6 @@ public class AaronController : MonoBehaviour
 		if(anim.layerCount ==2)		
 			layer2CurrentState = anim.GetCurrentAnimatorStateInfo(1);	// set our layer2CurrentState variable to the current state of the second Layer (1) of animation
 
-	
 
 		//gravity
 		// Use Raycast to prevent character floating bug
@@ -248,5 +259,8 @@ public class AaronController : MonoBehaviour
 		{
 			o.GetComponent<Rigidbody>().useGravity = true;
 		}
+
+
+		
 	}
 }

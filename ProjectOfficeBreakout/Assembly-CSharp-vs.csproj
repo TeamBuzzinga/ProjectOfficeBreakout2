@@ -71,6 +71,8 @@
      <Compile Include="Assets\WeiYangFolder\Models\Water Flow Free\Scripts\WaterFlowOrbitCamera.cs" />
      <Compile Include="Assets\WeiYangFolder\Scripts\AaronController.cs" />
      <Compile Include="Assets\WeiYangFolder\Scripts\FinishController.cs" />
+     <Compile Include="Assets\WeiYangFolder\Scripts\FootStepScript.cs" />
+     <Compile Include="Assets\WeiYangFolder\Scripts\LoseController.cs" />
      <Compile Include="Assets\WeiYangFolder\Scripts\WeightPlateController.cs" />
      <None Include="Assets\Prefabs\Player\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
      <None Include="Assets\WeiYangFolder\Models\SimplePhysicalShader\SimplePhysicalShaderRetro.shader" />
