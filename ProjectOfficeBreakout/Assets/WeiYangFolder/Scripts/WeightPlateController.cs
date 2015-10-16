@@ -24,7 +24,7 @@ public class WeightPlateController : MonoBehaviour {
 		if(obj.gameObject.tag == "CrashCubes")
 		{
 			pos.x = -2f;
-			scale.x = 10f;
+			scale.x = 11f;
 			platform.transform.position = pos;
 			platform.transform.localScale = scale;
 		}

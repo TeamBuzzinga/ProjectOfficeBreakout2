@@ -1,11 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\WeiYangFolder\Scripts\AaronController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\WeiYangFolder\Scripts\WeightPlateController.cs">
     <Files>
-      <File FileName="Assets\WeiYangFolder\Scripts\LoseController.cs" Line="27" Column="4" />
-      <File FileName="Assets\WeiYangFolder\Scripts\AaronController.cs" Line="265" Column="1" />
+      <File FileName="Assets\WeiYangFolder\Scripts\LoseController.cs" Line="22" Column="19" />
+      <File FileName="Assets\WeiYangFolder\Scripts\AaronController.cs" Line="1" Column="1" />
       <File FileName="Assets\RyanFolder\Scripts\LevelManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\WeiYangFolder\Scripts\FinishController.cs" Line="18" Column="18" />
+      <File FileName="Assets\WeiYangFolder\Scripts\FinishController.cs" Line="25" Column="36" />
+      <File FileName="Assets\WeiYangFolder\Scripts\FootStepScript.cs" Line="15" Column="2" />
+      <File FileName="Assets\WeiYangFolder\Scripts\MetalWhackScript.cs" Line="25" Column="37" />
+      <File FileName="Assets\WeiYangFolder\Scripts\WeightPlateController.cs" Line="27" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -73,6 +73,8 @@
      <Compile Include="Assets\WeiYangFolder\Scripts\FinishController.cs" />
      <Compile Include="Assets\WeiYangFolder\Scripts\FootStepScript.cs" />
      <Compile Include="Assets\WeiYangFolder\Scripts\LoseController.cs" />
+     <Compile Include="Assets\WeiYangFolder\Scripts\MetalWhackScript.cs" />
+     <Compile Include="Assets\WeiYangFolder\Scripts\StatusTextController.cs" />
      <Compile Include="Assets\WeiYangFolder\Scripts\WeightPlateController.cs" />
      <None Include="Assets\Prefabs\Player\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
      <None Include="Assets\WeiYangFolder\Models\SimplePhysicalShader\SimplePhysicalShaderRetro.shader" />

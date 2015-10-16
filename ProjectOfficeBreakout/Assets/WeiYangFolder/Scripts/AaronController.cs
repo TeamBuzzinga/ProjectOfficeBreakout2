@@ -53,22 +53,22 @@ public class AaronController : MonoBehaviour
 	bool grabbing = false;
 	GameObject o;
 
-	GameObject hud;
-
+	int cp = 0;
+	public Transform cube;
 
 	void Start ()
 	{
 		anim = GetComponent<Animator>();					  
 		col = GetComponent<CapsuleCollider>();	
-
-		hud = GameObject.Find("HUDCanvas");
-
+		
 		if(anim.layerCount ==2)
 			anim.SetLayerWeight(1, 1);
 
 		anim.SetBool("Lose",false);
 		anim.SetBool("Win",false);
 
+		Vector3 startPos = new Vector3(20f,25.6f,17f);
+		transform.position = startPos;
 	}
 	
 	
@@ -192,6 +192,11 @@ public class AaronController : MonoBehaviour
 		if(Input.GetButtonDown("Fire1"))
 			anim.SetBool("Grab",true);
 
+		//Rotate Through different checkpoints
+
+		if(Input.GetButtonDown("Fire2"))
+			rotatePosition();
+
 
 		if (currentBaseState.nameHash == crouchState) {
 			if (Input.GetKey(KeyCode.C)) {
@@ -262,5 +267,32 @@ public class AaronController : MonoBehaviour
 
 
 		
+	}
+
+	void rotatePosition()
+	{
+		cp++;
+		cp = cp%4;
+
+		Vector3 newPos = new Vector3(20f,25.6f,17f);
+		switch(cp)
+		{
+		case 0:
+			newPos = new Vector3(20f,25.6f,17f);
+			break;
+		case 1:
+			newPos = new Vector3(-7.8f,21f,14f);
+			break;
+		case 2:
+			newPos = new Vector3(-7.8f,17f,2.2f);
+			Instantiate(cube, new Vector3(-8.3f,17.73f,-3.81f),Quaternion.identity);
+			break;
+		case 3:
+			newPos = new Vector3(14f,17f,-3f);
+			break;
+		}
+		transform.position = newPos;
+
+
 	}
 }
