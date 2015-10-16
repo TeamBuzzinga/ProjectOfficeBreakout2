@@ -1,14 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FootstepsMute.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\RyanFolder\Scripts\LevelManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="19" Column="20" />
-      <File FileName="Assets\SidFolder\Scripts\ClimbLadder.cs" Line="1" Column="1" />
-      <File FileName="Assets\SidFolder\Scripts\PushObject.cs" Line="1" Column="1" />
-      <File FileName="Assets\SidFolder\Scripts\AddForce.cs" Line="1" Column="1" />
-      <File FileName="Assets\SidFolder\Scripts\AnimTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FootstepsOn.cs" Line="18" Column="4" />
-      <File FileName="Assets\Scripts\FootstepsMute.cs" Line="17" Column="14" />
+      <File FileName="Assets\WeiYangFolder\Scripts\AaronController.cs" Line="93" Column="34" />
+      <File FileName="Assets\RyanFolder\Scripts\LevelManager.cs" Line="18" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
