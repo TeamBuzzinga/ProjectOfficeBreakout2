@@ -51,12 +51,15 @@
      <Compile Include="Assets\RyanFolder\Scripts\SoundBehavior.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\FootstepsMute.cs" />
+     <Compile Include="Assets\Scripts\FootstepsOn.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerWalkMechanics.cs" />
      <Compile Include="Assets\Scripts\TPCamera.cs" />
      <Compile Include="Assets\Scripts\ThrowMechanics.cs" />
      <Compile Include="Assets\Scripts\WalkMechanics.cs" />
      <Compile Include="Assets\SidFolder\Scripts\AddForce.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\AnimTrigger.cs" />
      <Compile Include="Assets\SidFolder\Scripts\ClimbLadder.cs" />
      <Compile Include="Assets\SidFolder\Scripts\PushObject.cs" />
      <None Include="Assets\Prefabs\Player\TaichiCharacterPack\Shaders\toon_cutoff.shader" />

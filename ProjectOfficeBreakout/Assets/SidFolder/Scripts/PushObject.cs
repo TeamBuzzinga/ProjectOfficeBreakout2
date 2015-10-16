@@ -15,7 +15,7 @@ public class PushObject : MonoBehaviour {
 			return;
 
 		Vector3 pushDir = new Vector3 (collision.transform.position.x, 0, collision.transform.position.y);
-		objectHit.velocity = pushDir * pushPower;
+		objectHit.velocity = pushDir * pushPower; 
 	}
 
 }

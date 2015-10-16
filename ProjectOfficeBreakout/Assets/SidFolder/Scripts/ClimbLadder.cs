@@ -25,7 +25,7 @@ public class ClimbLadder : MonoBehaviour {
 	}
 
 	
-	void OnTriggerExit(Collider col){
+	void OnTriggerExit(Collider col){ 
 		if (col.gameObject.tag == "Ladder") {
 			inside = !inside;
 		}

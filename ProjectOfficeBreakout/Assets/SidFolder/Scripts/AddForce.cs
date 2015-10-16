@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class OpenDoor : MonoBehaviour {
+public class AddForce : MonoBehaviour {
 
 	public float force = 1000f;
 	private Rigidbody rigidBody;
@@ -15,7 +15,7 @@ public class OpenDoor : MonoBehaviour {
 	// Update is called once per frame
 //	void Update () {
 //	
-//	}
+//	} 
 
 	void OnMouseDown(){
 		rigidBody.AddForce (-transform.right * force);

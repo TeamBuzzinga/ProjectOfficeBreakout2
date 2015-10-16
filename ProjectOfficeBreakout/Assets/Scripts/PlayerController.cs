@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 	public float animSpeed = 1.5f;				// a public setting for overall animator animation speed
 	public float lookSmoother = 3f;				// a smoothing setting for camera motion
 	public bool useCurves;						// a setting for teaching purposes to show use of curves
-	public AudioClip walkSound;
+//	public AudioClip walkSound;
 //	private float volLowRange = .5f;
 //	private float volHighRange = 1.0f;
 	
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
 
 		if (currentBaseState.nameHash == locoState) {
-			audioSource.PlayOneShot(walkSound);
+//			audioSource.Play();
 			if (Input.GetKey(KeyCode.C)) {
 				anim.SetBool ("Crouch", true);
 			}
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
 		}
 		
 		else if (currentBaseState.nameHash == crouchWalkState) {
-			audioSource.Stop ();
+			audioSource.Stop (); 
 			if (Input.GetKey(KeyCode.C)) {
 				anim.SetBool ("Crouch", false);
 			}
