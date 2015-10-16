@@ -50,17 +50,11 @@ public class AaronController : MonoBehaviour
 	bool grabbing = false;
 	GameObject o;
 
-	public AudioClip metalStepAudio;
-	public AudioClip iceStepAudio;
-	AudioSource audioSource;
-
 
 	void Start ()
 	{
 		anim = GetComponent<Animator>();					  
-		col = GetComponent<CapsuleCollider>();		
-		audioSource = GetComponent<AudioSource>();
-
+		col = GetComponent<CapsuleCollider>();				
 		if(anim.layerCount ==2)
 			anim.SetLayerWeight(1, 1);
 	}
@@ -78,8 +72,8 @@ public class AaronController : MonoBehaviour
 		
 		if(anim.layerCount ==2)		
 			layer2CurrentState = anim.GetCurrentAnimatorStateInfo(1);	// set our layer2CurrentState variable to the current state of the second Layer (1) of animation
-		audioSource.clip = metalStepAudio;
-		audioSource.loop = false;
+
+	
 
 		//gravity
 		// Use Raycast to prevent character floating bug
@@ -92,12 +86,11 @@ public class AaronController : MonoBehaviour
 		{
 			if (gravityHitInfo.distance > 1.2f)
 			{
-				downSpeed =0.4f;
+				downSpeed =0.3f;
 				transform.position = new Vector3(transform.position.x,transform.position.y-downSpeed, transform.position.z);
 			}
 			else
 				downSpeed = 0f;
-
 		}
 
 		//Press 'R' to restart
@@ -146,8 +139,8 @@ public class AaronController : MonoBehaviour
 				if (Input.GetAxis("Vertical") != 0f )
 				{
 
-					slipX += 0.1f * rbTransX;
-					slipZ += 0.1f * rbTransZ;
+					slipX += 0.08f * rbTransX;
+					slipZ += 0.08f * rbTransZ;
 				}
 				else
 				{
@@ -182,31 +175,6 @@ public class AaronController : MonoBehaviour
 				float s = anim.GetFloat("Speed");
 				anim.SetFloat("Speed",s/4);
 			}
-
-
-			Ray soundRay = new Ray(transform.position + Vector3.up, -Vector3.up);
-			RaycastHit soundHitInfo = new RaycastHit();
-
-			if (Physics.Raycast(soundRay, out soundHitInfo))
-			{
-				audioSource.Play();
-				audioSource.loop = true;
-				if(soundHitInfo.collider.tag == "Metal")
-				{
-
-					audioSource.clip = metalStepAudio;
-					audioSource.Play();
-					audioSource.loop = true;
-				}
-				else if (soundHitInfo.collider.tag == "Ice")
-				{
-					audioSource.clip = iceStepAudio;
-					audioSource.Play();
-					audioSource.loop = true;
-				}
-				
-			}
-
 		}
 
 		//Use Grab when player click left mouse button
