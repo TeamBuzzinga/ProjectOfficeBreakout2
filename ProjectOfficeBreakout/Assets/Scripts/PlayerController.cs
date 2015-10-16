@@ -16,13 +16,15 @@ public class PlayerController : MonoBehaviour
 	public float animSpeed = 1.5f;				// a public setting for overall animator animation speed
 	public float lookSmoother = 3f;				// a smoothing setting for camera motion
 	public bool useCurves;						// a setting for teaching purposes to show use of curves
-
+	public AudioClip walkSound;
+//	private float volLowRange = .5f;
+//	private float volHighRange = 1.0f;
 	
 	private Animator anim;							// a reference to the animator on the character
 	private AnimatorStateInfo currentBaseState;			// a reference to the current state of the animator, used for base layer
 	private AnimatorStateInfo layer2CurrentState;	// a reference to the current state of the animator, used for layer 2
 	private CapsuleCollider col;					// a reference to the capsule collider of the character
-	
+	private AudioSource audioSource;
 
 	static int idleState = Animator.StringToHash("Base Layer.Idle");	
 	static int locoState = Animator.StringToHash("Base Layer.Locomotion");			// these integers are references to our animator's states
@@ -37,6 +39,7 @@ public class PlayerController : MonoBehaviour
 		col = GetComponent<CapsuleCollider>();				
 		if(anim.layerCount ==2)
 			anim.SetLayerWeight(1, 1);
+		audioSource = GetComponent<AudioSource> ();
 	}
 	
 	
@@ -49,12 +52,14 @@ public class PlayerController : MonoBehaviour
 		anim.speed = animSpeed;								// set the speed of our animator to the public variable 'animSpeed'
 		anim.SetLookAtWeight(lookWeight);					// set the Look At Weight - amount to use look at IK vs using the head's animation
 		currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// set our currentState variable to the current state of the Base Layer (0) of animation
-		
+//		float vol = Random.Range (volLowRange, volHighRange);
+
 		if(anim.layerCount ==2)		
 			layer2CurrentState = anim.GetCurrentAnimatorStateInfo(1);	// set our layer2CurrentState variable to the current state of the second Layer (1) of animation
 
 
 		if (currentBaseState.nameHash == locoState) {
+			audioSource.PlayOneShot(walkSound);
 			if (Input.GetKey(KeyCode.C)) {
 				anim.SetBool ("Crouch", true);
 			}
@@ -66,12 +71,14 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 		else if (currentBaseState.nameHash == crouchState) {
+			audioSource.Stop();
 			if (Input.GetKey(KeyCode.C)) {
 				anim.SetBool ("Crouch", false);
 			}
 		}
 		
 		else if (currentBaseState.nameHash == crouchWalkState) {
+			audioSource.Stop ();
 			if (Input.GetKey(KeyCode.C)) {
 				anim.SetBool ("Crouch", false);
 			}
