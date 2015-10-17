@@ -20,11 +20,11 @@ public class StatusTextController : MonoBehaviour {
 	void Update () {
 		if (anim.GetBool("Lose") == true)
 		{
-			setText("You Lose! Press '2' to Restart");
+			setText("You Lose! Press 'R' to Restart");
 		}
 		else if(anim.GetBool("Win") == true)
 		{
-			setText("Congrats! You Win. Press '2' to Replay or press one of the other numbers 1-5 to explore other levels!");
+			setText("Congrats! You Win. Press 'R' to Replay!");
 	
 		}
 		else
