@@ -10,21 +10,13 @@ using System.Collections;
 
 #endregion
 
-// Water shader type
-public enum eWaterShaderType
-{
-	None,
-	WaterDiffuse,
-	WaterHeightmap,
-	WaterSimple
-}
 
 /***************
 * WaterFlowDemo class
 * This class handles switching demo water, displays and updates GUI of water shader.
 **************/
 
-public class WaterFlowDemo : MonoBehaviour
+public class WaterFlowDemoAaron : MonoBehaviour
 {
 	
 	#region Variables

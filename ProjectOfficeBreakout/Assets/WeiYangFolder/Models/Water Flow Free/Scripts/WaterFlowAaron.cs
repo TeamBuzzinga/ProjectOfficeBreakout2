@@ -15,7 +15,7 @@ using System.Collections;
 * This class animates UV offset
 **************/
 
-public class WaterFlow : MonoBehaviour {
+public class WaterFlowAaron : MonoBehaviour {
 	
 	#region Variables
 	
