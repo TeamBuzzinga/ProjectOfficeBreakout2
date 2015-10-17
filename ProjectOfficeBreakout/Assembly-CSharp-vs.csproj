@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{418EB06E-F078-9594-C596-D49469925F74}</ProjectGuid>
+	<ProjectGuid>{24F2FECA-B279-1613-4F45-9F6D6B100980}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,7 +46,59 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\WeiYangFolder\Models\Water FX Pack\Scripts\ScrollUV.js" />
+     <Compile Include="Assets\DingfengS\script\DS_CameraController.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_CameraFollow.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_NPCmovement.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_PlayerController.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_PlayerWalkMechanics.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_TPCamera.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_ThrowMechanics.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_WalkMechanics.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_box.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_fanrotate.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_flashlight.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_lights.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_opendoor.cs" />
+     <Compile Include="Assets\DingfengS\script\DS_playermovement.cs" />
+     <Compile Include="Assets\RyanFolder\Scripts\ArtificialIntelligence\SoundBehaviorAI\SoundAlert.cs" />
+     <Compile Include="Assets\RyanFolder\Scripts\ArtificialIntelligence\SoundBehaviorAI\SoundIdle.cs" />
+     <Compile Include="Assets\RyanFolder\Scripts\ArtificialIntelligence\SoundBehaviorAI\SoundSuspicious.cs" />
+     <Compile Include="Assets\RyanFolder\Scripts\ArtificialIntelligence\State.cs" />
+     <Compile Include="Assets\RyanFolder\Scripts\ArtificialIntelligence\StateMachine.cs" />
+     <Compile Include="Assets\RyanFolder\Scripts\LevelManager.cs" />
+     <Compile Include="Assets\RyanFolder\Scripts\SoundBehavior.cs" />
+     <Compile Include="Assets\Scripts\BallMechanics.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\NPC\NPCmovement.cs" />
+     <Compile Include="Assets\Scripts\NPC\cam.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerWalkMechanics.cs" />
+     <Compile Include="Assets\Scripts\TPCamera.cs" />
+     <Compile Include="Assets\Scripts\ThrowMechanics.cs" />
+     <Compile Include="Assets\Scripts\WalkMechanics.cs" />
+     <Compile Include="Assets\SidFolder\Assets\Elementals\Scripts\OrbitCamera.cs" />
+     <Compile Include="Assets\SidFolder\Assets\Elementals\Scripts\TestParticles.cs" />
+     <Compile Include="Assets\SidFolder\Assets\Water Flow Free\Scripts\WaterFlow.cs" />
+     <Compile Include="Assets\SidFolder\Assets\Water Flow Free\Scripts\WaterFlowDemo.cs" />
+     <Compile Include="Assets\SidFolder\Assets\Water Flow Free\Scripts\WaterFlowOrbitCamera.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\AddForcetoObject.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\AnimTrigger.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\ClimbLadder.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\FootstepsMute.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\FootstepsOn.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\PushObject.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\WaterSound.cs" />
+     <Compile Include="Assets\WeiYangFolder\Models\Water Flow Free\Scripts\WaterFlowAaron.cs" />
+     <Compile Include="Assets\WeiYangFolder\Models\Water Flow Free\Scripts\WaterFlowDemoAaron.cs" />
+     <Compile Include="Assets\WeiYangFolder\Models\Water Flow Free\Scripts\WaterFlowOrbitCameraAaron.cs" />
+     <Compile Include="Assets\WeiYangFolder\Scripts\AaronController.cs" />
+     <Compile Include="Assets\WeiYangFolder\Scripts\FinishController.cs" />
+     <Compile Include="Assets\WeiYangFolder\Scripts\FootStepScript.cs" />
+     <Compile Include="Assets\WeiYangFolder\Scripts\LoseController.cs" />
+     <Compile Include="Assets\WeiYangFolder\Scripts\MetalWhackScript.cs" />
+     <Compile Include="Assets\WeiYangFolder\Scripts\StatusTextController.cs" />
+     <Compile Include="Assets\WeiYangFolder\Scripts\WeightPlateController.cs" />
      <None Include="Assets\Prefabs\Player\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
      <None Include="Assets\DingfengS\assets\WoodenBoxOpen02_fbx\readme.txt" />
      <None Include="Assets\WeiYangFolder\Models\SimplePhysicalShader\SimplePhysicalShaderRetro.shader" />

@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\WeiYangFolder\README.txt">
+    <Files>
+      <File FileName="Assets\WeiYangFolder\Scripts\AaronController.cs" Line="60" Column="3" />
+      <File FileName="Assets\RyanFolder\Scripts\LevelManager.cs" Line="3" Column="1" />
+      <File FileName="Assets\WeiYangFolder\README.txt" Line="19" Column="31" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

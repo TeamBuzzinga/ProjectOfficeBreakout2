@@ -16,7 +16,7 @@ You will be able to edit how slippery the floor is by editing SlipperySpeed in t
 
 This level has a number of obstacles to go through. The controls are the standard directional Keys to move around, Space to Jump, left Mouse click to grab an object and shift to run. You will also be able to rotate through the checkpoints using right mouse click.
 
-To restart the level, press '2'.
+To restart the level, press 'R'.
 
 The checkpoints in this level are as follows:
 

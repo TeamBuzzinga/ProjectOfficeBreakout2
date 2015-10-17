@@ -106,7 +106,7 @@ public class AaronController : MonoBehaviour
 
 		//Press 'R' to restart
 		if (Input.GetKeyDown (KeyCode.R)) {  
-			Application.LoadLevel (0);  
+			Application.LoadLevel ("WeiYangDemoScene");  
 		}  
 
 	
