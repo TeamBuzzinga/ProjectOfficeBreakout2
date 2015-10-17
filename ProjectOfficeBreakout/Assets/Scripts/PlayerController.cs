@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour
 		if(anim.layerCount ==2)
 			anim.SetLayerWeight(1, 1);
 	}
-	
+
+
+
 	
 	void FixedUpdate ()
 	{
@@ -52,6 +54,7 @@ public class PlayerController : MonoBehaviour
 		
 		if(anim.layerCount ==2)		
 			layer2CurrentState = anim.GetCurrentAnimatorStateInfo(1);	// set our layer2CurrentState variable to the current state of the second Layer (1) of animation
+
 
 
 		if (currentBaseState.nameHash == locoState) {
@@ -121,3 +124,4 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 }
+

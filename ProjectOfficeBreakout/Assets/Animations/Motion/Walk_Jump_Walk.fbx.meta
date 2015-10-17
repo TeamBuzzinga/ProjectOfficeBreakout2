@@ -171,7 +171,15 @@ ModelImporter:
             tangentMode: 0
           preInfinity: 2
           postInfinity: 2
-      events: []
+      events:
+      - time: .720972896
+        functionName: jumpAudio
+        data: 
+        objectReferenceParameter: {fileID: 8300000, guid: aeeae6c509b0a3747826a7c035d8d541,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
