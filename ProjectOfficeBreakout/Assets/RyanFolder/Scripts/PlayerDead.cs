@@ -11,9 +11,10 @@ public class PlayerDead : MonoBehaviour {
 
     void OnCollisionEnter(Collision collider)
     {
-        if (collider.collider.tag == "CannonBall")
+        if (collider.collider.tag == "Hazard")
         {
             anim.enabled = false;
+            GetComponent<CapsuleCollider>().height = .5f;
         }
     }
 }
