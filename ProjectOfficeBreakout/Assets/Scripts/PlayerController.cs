@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 		currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// set our currentState variable to the current state of the Base Layer (0) of animation
 //		float vol = Random.Range (volLowRange, volHighRange);
 
-		throwMechanics.throwBall (Input.GetButtonUp ("Fire1"));
+		//throwMechanics.throwBall (Input.GetButtonUp ("Fire1"));
 		if(anim.layerCount ==2)		
 			layer2CurrentState = anim.GetCurrentAnimatorStateInfo(1);	// set our layer2CurrentState variable to the current state of the second Layer (1) of animation
 
