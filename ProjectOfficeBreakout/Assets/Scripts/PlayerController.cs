@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
 	private AnimatorStateInfo layer2CurrentState;	// a reference to the current state of the animator, used for layer 2
 	private CapsuleCollider col;					// a reference to the capsule collider of the character
 	private AudioSource audioSource;
+	private ThrowMechanics throwMechanics;
+	private AddForcetoObject push;
 
 	static int idleState = Animator.StringToHash("Base Layer.Idle");	
 	static int locoState = Animator.StringToHash("Base Layer.Locomotion");			// these integers are references to our animator's states
@@ -37,6 +39,7 @@ public class PlayerController : MonoBehaviour
 	{
 		anim = GetComponent<Animator>();					  
 		col = GetComponent<CapsuleCollider>();				
+		throwMechanics = GetComponent<ThrowMechanics> ();
 		if(anim.layerCount ==2)
 			anim.SetLayerWeight(1, 1);
 		audioSource = GetComponent<AudioSource> ();
@@ -50,10 +53,11 @@ public class PlayerController : MonoBehaviour
 		anim.SetFloat("Speed", v);							// set our animator's float parameter 'Speed' equal to the vertical input axis				
 		anim.SetFloat("Direction", h); 						// set our animator's float parameter 'Direction' equal to the horizontal input axis		
 		anim.speed = animSpeed;								// set the speed of our animator to the public variable 'animSpeed'
-		anim.SetLookAtWeight(lookWeight);					// set the Look At Weight - amount to use look at IK vs using the head's animation
+//		anim.SetLookAtWeight(lookWeight);					// set the Look At Weight - amount to use look at IK vs using the head's animation
 		currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// set our currentState variable to the current state of the Base Layer (0) of animation
 //		float vol = Random.Range (volLowRange, volHighRange);
 
+		throwMechanics.throwBall (Input.GetButtonUp ("Fire1"));
 		if(anim.layerCount ==2)		
 			layer2CurrentState = anim.GetCurrentAnimatorStateInfo(1);	// set our layer2CurrentState variable to the current state of the second Layer (1) of animation
 
@@ -126,5 +130,19 @@ public class PlayerController : MonoBehaviour
 				}
 			}
 		}
+
+		if (Input.GetKeyDown (KeyCode.E)) {
+			Ray ray1 = new Ray(transform.position + Vector3.up, transform.forward);
+			Debug.DrawRay(transform.position + Vector3.up, transform.forward);
+			RaycastHit objectHit = new RaycastHit();
+
+			if (Physics.Raycast(ray1, out objectHit)) {
+				if(objectHit.distance <= 2f && objectHit.transform.tag == "Interactable"){
+					push = objectHit.transform.gameObject.GetComponent<AddForcetoObject> ();
+					push.addForce();
+				}
+			}
+		}
+
 	}
 }
