@@ -14,7 +14,7 @@ using System.Collections;
 * This script should be attached with the Main Camera in Demo scene.
 **************/
 
-public class WaterFlowOrbitCamera : MonoBehaviour
+public class WaterFlowOrbitCameraAaron : MonoBehaviour
 {
   #region Variables
 
