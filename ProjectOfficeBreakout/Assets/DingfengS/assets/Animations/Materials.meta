@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:ProjectOfficeBreakout/Assets/DingfengS/assets/Animations/Materials.meta
 guid: d49fbe019243ff0489b51055ed00a6c0
 folderAsset: yes
 timeCreated: 1444981557
+=======
+guid: 8e044eeede407e240ad21bbd62b19108
+folderAsset: yes
+timeCreated: 1445043969
+>>>>>>> origin/master:ProjectOfficeBreakout/Assets/Materials.meta
 licenseType: Free
 DefaultImporter:
   userData: 
