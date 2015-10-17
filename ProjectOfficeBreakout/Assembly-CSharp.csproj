@@ -49,28 +49,47 @@
      <Compile Include="Assets\RyanFolder\Scripts\ArtificialIntelligence\StateMachine.cs" />
      <Compile Include="Assets\RyanFolder\Scripts\LevelManager.cs" />
      <Compile Include="Assets\RyanFolder\Scripts\SoundBehavior.cs" />
+     <Compile Include="Assets\Scripts\BallMechanics.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\FootstepsMute.cs" />
-     <Compile Include="Assets\Scripts\FootstepsOn.cs" />
+     <Compile Include="Assets\Scripts\NPC\NPCmovement.cs" />
+     <Compile Include="Assets\Scripts\NPC\cam.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerWalkMechanics.cs" />
      <Compile Include="Assets\Scripts\TPCamera.cs" />
      <Compile Include="Assets\Scripts\ThrowMechanics.cs" />
      <Compile Include="Assets\Scripts\WalkMechanics.cs" />
-     <Compile Include="Assets\SidFolder\Scripts\AddForce.cs" />
+     <Compile Include="Assets\SidFolder\Assets\Elementals\Scripts\OrbitCamera.cs" />
+     <Compile Include="Assets\SidFolder\Assets\Elementals\Scripts\TestParticles.cs" />
+     <Compile Include="Assets\SidFolder\Assets\Water Flow Free\Scripts\WaterFlow.cs" />
+     <Compile Include="Assets\SidFolder\Assets\Water Flow Free\Scripts\WaterFlowDemo.cs" />
+     <Compile Include="Assets\SidFolder\Assets\Water Flow Free\Scripts\WaterFlowOrbitCamera.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\AddForcetoObject.cs" />
      <Compile Include="Assets\SidFolder\Scripts\AnimTrigger.cs" />
      <Compile Include="Assets\SidFolder\Scripts\ClimbLadder.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\FootstepsMute.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\FootstepsOn.cs" />
      <Compile Include="Assets\SidFolder\Scripts\PushObject.cs" />
+     <Compile Include="Assets\SidFolder\Scripts\WaterSound.cs" />
      <None Include="Assets\Prefabs\Player\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
+     <None Include="Assets\SidFolder\Assets\Water Flow Free\Shaders\Water Simple.shader" />
      <None Include="Assets\Prefabs\Player\TaichiCharacterPack\Readme.txt" />
      <None Include="Assets\Prefabs\Player\TaichiCharacterPack\Releasenote.txt" />
+     <None Include="Assets\SidFolder\Assets\Elementals\!Readme.txt" />
      <None Include="Assets\Prefabs\Player\TaichiCharacterPack\Shaders\toon_hair.shader" />
+     <None Include="Assets\SidFolder\Readme.txt" />
+     <None Include="Assets\SidFolder\Assets\Water Flow Free\!Readme.txt" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

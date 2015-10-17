@@ -1,14 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FootstepsMute.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SidFolder\Assets\Elementals\!Readme.txt">
     <Files>
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="19" Column="20" />
-      <File FileName="Assets\SidFolder\Scripts\ClimbLadder.cs" Line="1" Column="1" />
+      <File FileName="Assets\SidFolder\Scripts\WaterSound.cs" Line="1" Column="1" />
       <File FileName="Assets\SidFolder\Scripts\PushObject.cs" Line="1" Column="1" />
-      <File FileName="Assets\SidFolder\Scripts\AddForce.cs" Line="1" Column="1" />
+      <File FileName="Assets\SidFolder\Scripts\FootstepsOn.cs" Line="1" Column="1" />
+      <File FileName="Assets\SidFolder\Scripts\FootstepsMute.cs" Line="1" Column="1" />
+      <File FileName="Assets\SidFolder\Scripts\ClimbLadder.cs" Line="1" Column="1" />
       <File FileName="Assets\SidFolder\Scripts\AnimTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FootstepsOn.cs" Line="18" Column="4" />
-      <File FileName="Assets\Scripts\FootstepsMute.cs" Line="17" Column="14" />
+      <File FileName="Assets\SidFolder\Scripts\AddForcetoObject.cs" Line="5" Column="4" />
+      <File FileName="Assets\SidFolder\Assets\Elementals\!Readme.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

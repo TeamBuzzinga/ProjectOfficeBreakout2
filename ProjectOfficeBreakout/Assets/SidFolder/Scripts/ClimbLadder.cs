@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿/*
+ * Team Name: Team Buzzinga!
+ * Script Created by: Siddharth
+ * Other Members: Ryan, Dingfeng, Aaron, David
+ */
+using UnityEngine;
 using System.Collections;
 
 public class ClimbLadder : MonoBehaviour {

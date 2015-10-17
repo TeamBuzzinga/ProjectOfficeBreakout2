@@ -47,7 +47,7 @@ public class ThrowMechanics : MonoBehaviour {
     {
         GameObject obj = (GameObject)Instantiate(projectile, throwPosition.position, new Quaternion());
         Vector3 direction = new Vector3(transform.forward.x, 0, transform.forward.z).normalized;
-        direction += throwDirection;
+
 
         obj.GetComponent<Rigidbody>().AddForce(direction * throwForce);
 		

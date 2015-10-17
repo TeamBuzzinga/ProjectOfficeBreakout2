@@ -1,15 +1,20 @@
-﻿using UnityEngine;
+﻿/*
+ * Team Name: Team Buzzinga!
+ * Script Created by: Siddharth
+ * Other Members: Ryan, Dingfeng, Aaron, David
+ */
+using UnityEngine;
 using System.Collections;
 
 public class PushObject : MonoBehaviour {
 
-	public float pushPower = 2.0f;
+	public float pushPower = 0.02f;
 
 	private Rigidbody objectHit;
 
 	void onCollisionEnter(Collision collision){
 		objectHit = collision.rigidbody;
-		if (objectHit == null || objectHit.isKinematic)
+		if (objectHit == null || objectHit.isKinematic || objectHit.transform.gameObject.tag != "Pushable")
 			return;
 		if (collision.transform.position.y < -0.3)
 			return;
