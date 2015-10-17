@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class QuickTrigger : MonoBehaviour {
     public float explosionForce;
     public float explosionRadius;
+    public AudioClip clip;
 
     List<Rigidbody> explosionStuff;
 
@@ -16,13 +17,7 @@ public class QuickTrigger : MonoBehaviour {
     void OnTriggerEnter(Collider collider)
     {
         Rigidbody rigid = collider.GetComponent<Rigidbody>();
-        if (collider.tag == "Player")
-        {
-            //explosionStuff.Add(collider.GetComponent<Rigidbody>());
-            //collider.GetComponent<Animator>().enabled = false;
-            explode();
-        }
-        else if (rigid != null)
+        if (rigid != null)
         {
             explosionStuff.Add(rigid);
         }
@@ -30,8 +25,18 @@ public class QuickTrigger : MonoBehaviour {
 
     }
 
+    void OnCollisionEnter(Collision collider)
+    {
+        if (collider.collider.tag == "Player")
+        {
+            explode();
+        }
+    }
+
     void explode()
     {
+        AudioSource.PlayClipAtPoint(clip, this.transform.position);
+
         foreach(Rigidbody rigid in explosionStuff)
         {
             rigid.AddExplosionForce(explosionForce, this.transform.position, explosionRadius);
